@@ -173,7 +173,7 @@ export default function DashboardContent({ user, cardData }: DashboardContentPro
                 <Input 
                   type="search" 
                   placeholder="Search memories..." 
-                  className="w-full md:w-[200px] pl-8"
+                  className="w-full md:w-[200px] pl-8 rounded-full"
                 />
               </div>
               <Button variant="outline" size="icon">
@@ -204,7 +204,7 @@ export default function DashboardContent({ user, cardData }: DashboardContentPro
 
           {/* Section title */}
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-xl font-semibold">Recent Memories</h2>
+            <h2 className="text-xl font-semibold">Your Scraps</h2>
             <Button variant="link" className="text-primary">View all</Button>
           </div>
 

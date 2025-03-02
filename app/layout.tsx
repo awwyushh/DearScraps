@@ -1,8 +1,5 @@
 import type { Metadata } from "next";
-
-import Providers from "@/providers/sessionprovider"
-
-import { SessionProvider } from "next-auth/react";
+import Providers from "@/providers/sessionprovider";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -23,14 +20,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`} style={{ backgroundColor: "oklch(0.439 0 0)" }}>
         <Providers>{children}</Providers>
       </body>
     </html>

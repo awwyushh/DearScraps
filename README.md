@@ -1,36 +1,159 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DearScraps
 
-## Getting Started
+**DearScraps** is a digital platform for creating, managing, and collaborating on scrapbooks. It allows users to preserve memories with photos, text, and media while connecting globally through a live feed of user-crafted "scraps."
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Table of Contents
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Project Description](#project-description)
+- [Key Features](#key-features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Docker Setup](#docker-setup)
+- [Contributing](#contributing)
+- [License](#license)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Description
 
-## Learn More
+DearScraps is a web-based tool that lets users:
+- Build and organize digital scrapbooks with photos, notes, and media.
+- Collaborate with others on shared scrapbook projects.
+- Explore a real-time global feed of scraps from users worldwide.
 
-To learn more about Next.js, take a look at the following resources:
+It’s perfect for preserving memories or connecting through creative storytelling.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Key Features
 
-## Deploy on Vercel
+- **Scrapbook Creation**: Upload photos, add notes, and arrange memories.
+- **Collaboration**: Invite others to contribute to your scrapbooks.
+- **Global Feed**: View real-time scraps from around the world.
+- **Easy Interface**: Simple, intuitive design for all users.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Installation
+
+Run DearScraps locally with these steps:
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v14+)
+- [npm](https://www.npmjs.com/) (v6+)
+- [Git](https://git-scm.com/)
+
+### Steps
+
+1. **Clone the repo**:
+   ```bash
+   git clone https://github.com/yourusername/dearscraps.git
+   cd dearscraps
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Set up environment**:
+   - Create a `.env` file.
+   - Add variables (e.g., database credentials) from `.env.example`.
+
+4. **Start the app**:
+   ```bash
+   npm start
+   ```
+   
+5. **Open it**:
+   - Visit [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+## Usage
+
+### Creating a Scrapbook
+
+1. Sign up or log in.
+2. Click **"New Scrapbook"** and add a title and description.
+3. Upload photos, notes, or media.
+4. Arrange items by dragging and dropping.
+
+### Collaborating
+
+1. From your scrapbook, click **"Invite."**
+2. Enter collaborators’ email addresses.
+3. They can add or edit content.
+
+### Viewing the Feed
+
+1. On the homepage, scroll the live feed.
+2. Like, comment, or share inspiring scraps.
+
+---
+
+## Docker Setup
+
+Run DearScraps using Docker:
+
+### Prerequisites
+
+- [Docker](https://www.docker.com/)
+- [Docker Compose](https://docs.docker.com/compose/)
+
+### Steps
+
+1. **Clone the repo**:
+   ```bash
+   git clone https://github.com/yourusername/dearscraps.git
+   cd dearscraps
+   ```
+
+2. **Build and start the container**:
+   ```bash
+   docker-compose up --build
+   ```
+
+3. **Access the app**:
+   - Visit [http://localhost:3000](http://localhost:3000) in your browser.
+
+4. **Stopping the container**:
+   ```bash
+   docker-compose down
+   ```
+
+---
+
+## Contributing
+
+We’d love your help! Here’s how to contribute:
+
+### Steps
+
+1. **Fork the repository**.
+2. **Create a branch**:
+   ```bash
+   git checkout -b feature-name
+   ```
+3. Make and commit changes.
+4. **Push to your fork**:
+   ```bash
+   git push origin feature-name
+   ```
+5. Submit a pull request to the `main` branch.
+
+### Guidelines
+
+- Match the code style.
+- Use clear commit messages.
+- Update docs if needed.
+- Discuss big changes in an issue first.
+
+---
+
+## License
+
+This project uses the **MIT License**.

@@ -22,7 +22,7 @@ export default function SignIn() {
     if (result?.error) {
       setError(result.error);
     } else {
-      router.push("/"); // Redirect to home or dashboard
+      router.push("/dashboard"); // Redirect to home or dashboard
     }
   };
 

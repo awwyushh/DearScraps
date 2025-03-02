@@ -38,22 +38,22 @@ export default function SignUp() {
       }),
     });
 
-    if (response.ok) {
-      const result = await signIn("credentials", {
-        redirect: false,
-        email: formData.email,
-        password: formData.password,
-      });
-      if (result?.error) {
-        setError(result.error);
-      } else {
-        router.push("/"); // Redirect to home or dashboard
-      }
+    const data = await response.json();
+  if (response.ok) {
+    const result = await signIn("credentials", {
+      redirect: false, // Don’t redirect automatically here
+      email: formData.email,
+      password: formData.password,
+    });
+    if (result?.error) {
+      setError(result.error);
     } else {
-      const data = await response.json();
-      setError(data.message || "Something went wrong");
+      router.push("/dashboard"); // Redirect to dashboard on success
     }
-  };
+  } else {
+    setError(data.message || "Failed to sign up");
+  }
+};
 
   return (
     <section className="bg-white">

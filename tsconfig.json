@@ -22,7 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/components/TrueFocus.jsx"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/auth/signin/page.jsx", "app/auth/signup/page.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/auth/signin/page.jsx", "app/auth/signup/page.jsx", "app/dashboard/page.Jsx"],
   "exclude": ["node_modules"]
 }
